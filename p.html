@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neima | Creative Portfolio</title>
+  <link rel="stylesheet" href="p.css">
+  <link rel="icon" href="./img/port.jpg" type="image/jpeg">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+   <header class="navbar">
+  <div class="container nav-container">
+    <!-- 1. Logo on Left -->
+    <a href="./img/photo.jpg" class="logo">Neima</a>
+
+    <!-- 2. Mobile Hamburger Toggle -->
+    <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- 3. Navigation Links + Theme Button on Right -->
+    <nav class="nav-links" id="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
+      <!-- Theme button placed at the end -->
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+      </button>
+    </nav>
+  </div>
+   </header>
+
+  <!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="container hero-container reveal">
+    
+    <!-- Left Column: Hero Text -->
+    <div class="hero-text">
+      <span class="badge">Front-End Web Developer & UI Craftsman</span>
+      <h1>Building clean, interactive web experiences.</h1>
+      <p>I design and build responsive applications with a focus on usability, modern design, and performant code.</p> <br> <br>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Right Column: Profile Image -->
+    <div class="hero-image">
+      <img src="./img/photo.jpg" alt="Neima's Profile Photo">
+    </div>
+
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section class="about reveal" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card">
+         <h3>A passionate Front-End Developer</h3>
+        <p>I'm Neima, a front-end web developer with a deep love for clean design, smooth animations, and performant code. I specialize in turning ideas into elegant, responsive websites that users love to interact with.</p>
+        <p>From landing pages to full business websites, I focus on delivering experiences that are not only beautiful but also fast, accessible, and built to last.</p>
+        </div>
+        <div class="about-card">
+          <h3>User-Centric Focus</h3>
+          <p>Every pixel matters. I create accessible, adaptable layouts that offer an effortless user experience across all screen sizes, ensuring your message connects with every visitor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects reveal" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Work</h2>
+      
+      <!-- Filter Controls -->
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="ui">UI & Dashboards</button>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-category="ui">
+          <div class="card-preview">
+            <img src="./img/E-commerce.jpg" alt="E-Commerce admin Hub">
+            <span class="card-tag">Dashboard</span>
+          </div>
+          <div class="card-body">
+            <h3>E-Commerce Admin Hub</h3>
+            <p>A responsive SaaS management dashboard built for tracking orders, analytics, and inventory.</p>
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-actions">
+            <a href="https://starfire-neimu.github.io/E-commerce-store/E-commerce.html" target="_blank" class="btn btn-sm" >Live Demo</a>
+            <button class="btn btn-sm open-modal" data-title="E-Commerce Admin Hub" data-details="This dashboard features custom responsive charts, modular card UI elements, and a dynamic order tracking table optimized for mobile and desktop screens.">View Details</button>
+          </div>
+          </div>
+        </article>
+ <!-- Project 2 -->
+        <article class="project-card reveal" data-category="web">
+          <div class="card-preview">
+                        <img src="./img/task app.jpg" alt="task manager admin Hub">
+            <span class="card-tag">Web App</span>
+          </div>
+          <div class="card-body">
+            <h3>Interactive Task Manager</h3>
+            <p>A feature rich productivity app supporting custom UI modals, dynamic lists, and theme management.</p>
+            <div class="card-tags">
+              <span>JavaScript</span>
+              <span>CSS Grid</span>
+              <span>LocalStorage</span>
+            </div>
+            <div class="card-actions">
+                          <a href="https://starfire-neimu.github.io/Task-maneger/Task-manager.html" target="_blank" class="btn btn-sm" >Live Demo</a>
+            <button class="btn btn-sm open-modal" data-title="Interactive Task Manager" data-details="Allows users to organize tasks, assign priority levels, and trigger custom modals for sub-task management. Persists state via local browser storage.">View Details</button>
+          </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" data-category="web">
+          <div class="card-preview">
+                        <img src="./img/landing page.jpg" alt="E-Commerce admin Hub">
+
+            <span class="card-tag">API Integration</span>
+          </div>
+          <div class="card-body">
+<h3>SaaS Landing Page</h3>
+          <p>A conversion focused landing page with gradient hero, feature grid, and testimonial carousel.</p>
+          <div class="card-tags">
+              <span>HTML5</span>
+              <span>JAVA SCRIPT</span>
+              <span>CSS3</span>
+            </div>
+            <div class="card-actions">
+                                            <a href="https://starfire-neimu.github.io/Landing-page/landing-page.html" target="_blank" class="btn btn-sm" >Live Demo</a>
+            <button class="btn btn-sm open-modal" data-title="Modern Product Landing Page" data-details="A high converting, responsive landing page featuring a custom hero section,interactive Product showcase, dynamic feature grid and integrated lead capture forms.">View Details</button>
+          </div>
+          </div>
+        </article>
+      </div>
+    </div> 
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills reveal" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-item">HTML5 & Semantic Markup</div>
+        <div class="skill-item">CSS3 (Grid, Flexbox, Animations)</div>
+        <div class="skill-item">Modern JavaScript </div>
+        <div class="skill-item">Responsive Web Design</div>
+        <div class="skill-item">Git & GitHub Workflow</div>
+        <div class="skill-item">VS Code Customization</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Split 2-Column Layout) -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      
+      <!-- Left Column: Info & Social Pills -->
+      <div class="contact-info reveal">
+        <h2>Have a project in mind?</h2>
+        <p>I'm always open to new opportunities and collaborations. Feel free to reach out through any of the channels below.</p>
+        
+        <ul>
+          <li>
+            <a href="mailto:yesihaksusu@gmail.com" target="_blank">
+              <div class="icon">✉️</div>
+              <div class="text">
+                <small>Email</small>
+                <strong>yesihaksusu@gmail.com</strong>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/neimayesihak" target="_blank">
+              <div class="icon">💼</div>
+              <div class="text">
+                <small>LinkedIn</small>
+                <strong>neimayesihak</strong>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Starfire-neimu" target="_blank">
+              <div class="icon">💻</div>
+              <div class="text">
+                <small>GitHub</small>
+                <strong>Neima</strong>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/+251717772700" target="_blank">
+              <div class="icon">💬</div>
+              <div class="text">
+                <small>WhatsApp</small>
+                <strong>+251 717 772 700</strong>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+ <!-- Right Column: Contact Form Card -->
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" required placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" required placeholder="john@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" required placeholder="Project inquiry">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" required placeholder="Tell me about your project..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message &rarr;</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Neima. Built with HTML5, CSS3 & JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Component -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-details">Project details go here...</p>
+    </div>
+  </div>
+
+  <script src="p.js"></script>
+</body>
+</html>
